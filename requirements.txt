@@ -1,0 +1,13 @@
+gradio
+torch
+transformers
+pandas
+numpy
+scikit-learn
+matplotlib
+python-dotenv
+groq
+openai
+safetensors
+accelerate
+sentencepiece
