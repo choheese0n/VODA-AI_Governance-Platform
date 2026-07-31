@@ -1,31 +1,27 @@
+# Architecture Diagrams
 
-# System Diagrams
+This directory contains architecture and workflow diagrams for the **VODA AI Governance Platform**.
 
-This folder contains architecture and workflow diagrams used in the VODA AI Governance Platform.
+The diagrams provide a visual overview of the platform, including the system architecture, AI governance workflow, and data processing pipeline.
 
-These diagrams help explain how user input is processed, how AI responses are analyzed, and how governance results are generated.
+## Planned Diagrams
 
----
+- **System Architecture**
+  - Overall architecture of the VODA AI Governance Platform.
+  - Illustrates the interaction between the Gradio interface, Groq API, governance models, and database.
 
-## System Architecture
+- **Governance Workflow**
+  - End-to-end workflow from user input to AI response analysis.
+  - Includes sycophancy detection, bias classification, severity analysis, and governance result generation.
 
-![System Architecture](system_architecture.png)
+- **Model Pipeline**
+  - Internal processing pipeline of the dual-model architecture.
+  - Shows how the Sycophancy Detection Model and Bias & Severity Detection Model operate in parallel.
 
-**Description**
+- **Deployment Architecture**
+  - Deployment environment and application structure.
+  - Includes Gradio, Groq API, SQLite, and model components.
 
-The VODA AI Governance Platform processes conversations through the following workflow:
+## Status
 
-- User Question
-- Gradio Chat Interface
-- Groq API (LLM)
-- AI Response
-- Question + Response Pair
-- Governance Engine
-  - Sycophancy Detection Model
-  - Bias & Severity Detection Model
-- Governance Result
-- Interpretation & Recommendation
-- Dashboard
-- SQLite Storage
-
-> The architecture diagram will be updated with the latest platform version.
+Architecture diagrams will be added in future updates.
