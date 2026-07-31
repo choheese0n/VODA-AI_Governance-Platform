@@ -1,27 +1,63 @@
 # Architecture Diagrams
 
-This directory contains architecture and workflow diagrams for the **VODA AI Governance Platform**.
+이 폴더는 **VODA AI 거버넌스 플랫폼**의 시스템 구조와 처리 과정을 설명하는 다이어그램을 관리하는 공간입니다.
 
-The diagrams provide a visual overview of the platform, including the system architecture, AI governance workflow, and data processing pipeline.
+프로젝트의 전체 동작 흐름과 모델 구조를 시각적으로 이해할 수 있도록 관련 다이어그램을 정리합니다.
 
-## Planned Diagrams
+---
 
-- **System Architecture**
-  - Overall architecture of the VODA AI Governance Platform.
-  - Illustrates the interaction between the Gradio interface, Groq API, governance models, and database.
+## 포함 예정 다이어그램
 
-- **Governance Workflow**
-  - End-to-end workflow from user input to AI response analysis.
-  - Includes sycophancy detection, bias classification, severity analysis, and governance result generation.
+### 1. 시스템 아키텍처 (System Architecture)
+플랫폼의 전체 구성과 각 구성 요소 간의 연결 관계를 나타냅니다.
 
-- **Model Pipeline**
-  - Internal processing pipeline of the dual-model architecture.
-  - Shows how the Sycophancy Detection Model and Bias & Severity Detection Model operate in parallel.
+주요 구성 요소
+- 사용자
+- Gradio 인터페이스
+- Groq API
+- AI 응답 생성
+- AI 거버넌스 분석 엔진
+- 동조(Sycophancy) 탐지 모델
+- 편향 및 심각도 분석 모델
+- SQLite 데이터베이스
 
-- **Deployment Architecture**
-  - Deployment environment and application structure.
-  - Includes Gradio, Groq API, SQLite, and model components.
+---
 
-## Status
+### 2. AI 거버넌스 분석 흐름 (Governance Workflow)
+사용자의 질문부터 최종 분석 결과가 생성되기까지의 전체 처리 과정을 나타냅니다.
 
-Architecture diagrams will be added in future updates.
+예상 흐름
+
+사용자 질문
+→ AI 응답 생성
+→ 질문·응답 결합
+→ 동조 탐지
+→ 편향 분석
+→ 심각도 분석
+→ 거버넌스 결과 생성
+→ 결과 시각화 및 저장
+
+---
+
+### 3. 모델 처리 파이프라인 (Model Pipeline)
+두 개의 AI 모델이 어떻게 병렬로 동작하여 결과를 생성하는지 설명합니다.
+
+- 동조(Sycophancy) 탐지 모델
+- 편향 및 심각도 분석 모델
+- 결과 통합 및 해석
+
+---
+
+### 4. 배포 구조 (Deployment Architecture)
+프로젝트의 실행 및 배포 환경을 설명합니다.
+
+- Gradio
+- Groq API
+- AI 모델
+- SQLite
+
+---
+
+## 업데이트 예정
+
+시스템 아키텍처 및 처리 흐름 다이어그램은 프로젝트 최종 버전에 맞춰 순차적으로 추가될 예정입니다.
