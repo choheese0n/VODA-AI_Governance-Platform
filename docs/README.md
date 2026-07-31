@@ -169,3 +169,49 @@ python app.py
 - Enhance explainability for governance decisions.
 - Deploy the platform using Hugging Face Spaces or cloud services.
 - Expand AI ethics guidelines for broader real-world applications.
+
+---
+
+## 🎨 UI / UX Design
+
+### Desktop - Live Chat
+
+![Desktop Live Chat](assets/screenshots/figma/figma_live_chat_desktop.png)
+
+실시간 AI 대화와 윤리 분석 결과를 동시에 확인할 수 있도록 설계한 데스크톱 UI입니다.
+
+---
+
+### Desktop - Analysis
+
+![Desktop Analysis](assets/screenshots/figma/figma_analysis_desktop.png)
+
+사용자 질문과 AI 답변을 입력하여 동조 여부, 편향 수준, 심각도를 분석하는 화면입니다.
+
+---
+
+### Desktop - Monitoring Dashboard
+
+![Monitoring Dashboard](assets/screenshots/figma/figma_monitoring_dashboard_desktop.png)
+
+운영자가 전체 위험 현황과 탐지 결과를 확인할 수 있도록 설계한 모니터링 대시보드입니다.
+
+> **Note**
+>
+> 본 화면의 통계와 수치는 UI 시연을 위한 예시 데이터입니다.
+
+---
+
+### Mobile - Live Chat
+
+![Mobile Live Chat](assets/screenshots/figma/figma_live_chat_mobile.png)
+
+모바일 환경에서도 AI 대화와 분석 결과를 직관적으로 확인할 수 있도록 설계했습니다.
+
+---
+
+### Mobile - Analysis
+
+![Mobile Analysis](assets/screenshots/figma/figma_analysis_mobile.png)
+
+분석 근거와 권장 조치까지 확인할 수 있는 상세 분석 화면입니다.
