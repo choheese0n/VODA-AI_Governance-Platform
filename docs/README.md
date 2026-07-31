@@ -176,7 +176,7 @@ python app.py
 
 ### Desktop - Live Chat
 
-![Desktop Live Chat](assets/screenshots/figma/figma_live_chat_desktop.png)
+![Desktop Live Chat](figma_live_chat_desktop.png)
 
 실시간 AI 대화와 윤리 분석 결과를 동시에 확인할 수 있도록 설계한 데스크톱 UI입니다.
 
@@ -184,7 +184,7 @@ python app.py
 
 ### Desktop - Analysis
 
-![Desktop Analysis](assets/screenshots/figma/figma_analysis_desktop.png)
+![Desktop Analysis](figma_analysis_desktop.png)
 
 사용자 질문과 AI 답변을 입력하여 동조 여부, 편향 수준, 심각도를 분석하는 화면입니다.
 
@@ -192,7 +192,7 @@ python app.py
 
 ### Desktop - Monitoring Dashboard
 
-![Monitoring Dashboard](assets/screenshots/figma/figma_monitoring_dashboard_desktop.png)
+![Monitoring Dashboard](figma_monitoring_dashboard_desktop.png)
 
 운영자를 위한 AI 윤리 모니터링 대시보드입니다.
 
@@ -204,7 +204,7 @@ python app.py
 
 ### Mobile - Live Chat
 
-![Mobile Live Chat](assets/screenshots/figma/figma_live_chat_mobile.png)
+![Mobile Live Chat](figma_live_chat_mobile.png)
 
 모바일에서도 AI 대화와 분석 결과를 확인할 수 있도록 설계했습니다.
 
