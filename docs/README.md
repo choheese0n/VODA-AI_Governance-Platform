@@ -194,11 +194,11 @@ python app.py
 
 ![Monitoring Dashboard](assets/screenshots/figma/figma_monitoring_dashboard_desktop.png)
 
-운영자가 전체 위험 현황과 탐지 결과를 확인할 수 있도록 설계한 모니터링 대시보드입니다.
+운영자를 위한 AI 윤리 모니터링 대시보드입니다.
 
 > **Note**
 >
-> 본 화면의 통계와 수치는 UI 시연을 위한 예시 데이터입니다.
+> 화면의 통계와 수치는 UI 시연을 위한 예시 데이터입니다.
 
 ---
 
@@ -206,7 +206,7 @@ python app.py
 
 ![Mobile Live Chat](assets/screenshots/figma/figma_live_chat_mobile.png)
 
-모바일 환경에서도 AI 대화와 분석 결과를 직관적으로 확인할 수 있도록 설계했습니다.
+모바일에서도 AI 대화와 분석 결과를 확인할 수 있도록 설계했습니다.
 
 ---
 
@@ -214,4 +214,4 @@ python app.py
 
 ![Mobile Analysis](assets/screenshots/figma/figma_analysis_mobile.png)
 
-분석 근거와 권장 조치까지 확인할 수 있는 상세 분석 화면입니다.
+판단 근거와 권장 조치까지 제공하는 모바일 상세 분석 화면입니다.
