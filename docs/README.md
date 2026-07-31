@@ -44,3 +44,128 @@ AI의 답변을 실시간으로 분석하여
 를 판단하고,
 
 사용자와 개발자가 AI 응답의 윤리적 위험성을 함께 확인할 수 있도록 하는 것입니다.
+
+---
+
+## ✨ Features
+
+- 💬 **Real-time AI Conversation**
+  - Generate AI responses using the Groq API.
+
+- 🧠 **Sycophancy Detection**
+  - Analyze whether the AI response excessively agrees with the user's opinion.
+
+- ⚖️ **Bias Detection**
+  - Detect biased or discriminatory expressions in AI responses.
+
+- 🚨 **Severity Analysis**
+  - Assess the severity of harmful content.
+
+- 📊 **Governance Dashboard**
+  - Display analysis results through an intuitive Gradio interface.
+ 
+---
+
+## 🏗️ System Architecture
+
+```text
+User Question
+      │
+      ▼
+ Groq API (LLM)
+      │
+      ▼
+ AI Response
+      │
+      ▼
+ VODA Monitoring Model
+      ├── Sycophancy Detection
+      ├── Bias Detection
+      └── Severity Analysis
+      │
+      ▼
+ Governance Dashboard (Gradio)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| AI Model | KcELECTRA |
+| LLM | Groq API |
+| Framework | Gradio |
+| ML Library | PyTorch, Transformers |
+| Data | Unsmile Dataset, Custom Sycophancy Dataset |
+| Version Control | Git, GitHub |
+
+---
+
+## 📁 Project Structure
+
+```text
+VODA-AI_Governance-Platform
+├── app.py
+├── src/
+├── models/
+├── notebooks/
+├── assets/
+├── docs/
+├── results/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/choheese0n/VODA-AI_Governance-Platform.git
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set API Key
+
+Configure your Groq API Key before running the application.
+
+### 4. Run
+
+```bash
+python app.py
+```
+
+---
+
+## 📊 Results
+
+| Model | Result |
+|--------|--------|
+| Bias Detection | Accuracy: 88.1% |
+| Sycophancy Detection | Experimental Dataset (848 samples) |
+
+### Example Output
+
+- Bias Level
+- Severity
+- Sycophancy
+- Governance Comment
+
+---
+
+## 🔮 Future Work
+
+- Improve the diversity of the Sycophancy dataset.
+- Support multiple LLM providers.
+- Enhance explainability for governance decisions.
+- Deploy the platform using Hugging Face Spaces or cloud services.
+- Expand AI ethics guidelines for broader real-world applications.
