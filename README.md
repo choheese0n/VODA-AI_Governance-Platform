@@ -46,25 +46,25 @@ AI의 답변을 실시간으로 분석하여
 
 ---
 
-## ✨ Features
+## ✨ 주요 기능
 
-- 💬 **Real-time AI Conversation**
-  - Generate AI responses using the Groq API.
+- 💬 **실시간 AI 대화**
+  - Groq API를 활용하여 생성형 AI와 실시간으로 대화합니다.
 
-- 🧠 **Sycophancy Detection**
-  - Analyze whether the AI response excessively agrees with the user's opinion.
+- 🧠 **동조(Sycophancy) 탐지**
+  - AI 응답이 사용자의 주장에 과도하게 동조하는지 분석합니다.
 
-- ⚖️ **Bias Detection**
-  - Detect biased or discriminatory expressions in AI responses.
+- ⚖️ **편향(Bias) 탐지**
+  - AI 응답의 편향 및 차별 표현을 탐지합니다.
 
-- 🚨 **Severity Analysis**
-  - Assess the severity of harmful content.
+- 🚨 **심각도(Severity) 분석**
+  - 유해 표현의 위험 수준을 분석합니다.
 
-- 📊 **Governance Dashboard**
-  - Display analysis results through an intuitive Gradio interface.
+- 📊 **거버넌스 대시보드**
+  - 분석 결과를 Gradio 기반 대시보드에서 시각적으로 제공합니다.
 
-- 💾 **Conversation Logging**
-  - Store conversations and governance results in SQLite.
+- 💾 **대화 로그 저장**
+  - 대화 내용과 분석 결과를 SQLite 데이터베이스에 저장합니다.
  
 ---
 
@@ -131,50 +131,54 @@ VODA-AI_Governance-Platform
 
 ---
 
-## 🚀 Getting Started
+## 🚀 실행 방법
 
-### 1. Clone Repository
+### 1. 저장소 복제
 
 ```bash
 git clone https://github.com/choheese0n/VODA-AI_Governance-Platform.git
 ```
 
-### 2. Install Dependencies
+### 2. 패키지 설치
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Set API Key
+### 3. API Key 설정
 
-Configure your Groq API Key before running the application.
+애플리케이션 실행 전 Groq API Key를 환경 변수 또는 설정 파일에 등록합니다. 
 
-### 4. Run
+### 4. 실행
 
 ```bash
 python app.py
 ```
 
+
 ---
 
-## 📊 Results
+### 📊 Results → 성능 평가 결과
 
-### Final Bias & Severity Model (v3)
+```md
+## 📊 성능 평가 결과
 
-| Metric | Score |
-|---------|------:|
+### 최종 편향·심각도 모델 (v3)
+
+| 평가 지표 | 결과 |
+|-----------|------:|
 | Accuracy | **88.0%** |
 | Macro Recall | **87.0%** |
 | Macro F1-Score | **84.0%** |
 
-#### Key Performance
+#### 주요 성능
 
-- Level 1 (Profanity) Recall: **83.1%**
-- Level 3 (High-risk Bias) Recall: **92.7%**
+- Level 1 (욕설) Recall: **83.1%**
+- Level 3 (고위험 편향) Recall: **92.7%**
 
-The final model significantly improved its ability to detect harmful and high-risk responses compared with earlier training stages. It achieved strong recall for high-risk bias detection while maintaining balanced overall performance.
+최종 모델은 초기 모델 대비 고위험 편향 탐지 성능을 크게 향상시켰으며, AI 거버넌스 시스템에 적합한 수준의 분류 성능을 확보했습니다.
 
-> Detailed evaluation results, including baseline and intermediate training stages, are available in `assets/performance/README.md`.
+> 자세한 성능 평가 과정은 `assets/performance/README.md`에서 확인할 수 있습니다.
 
 ---
 
@@ -187,14 +191,14 @@ The final model significantly improved its ability to detect harmful and high-ri
 
 ---
 
-## 🔮 Future Work
+## 🔮 향후 개선 방향
 
-- Improve the diversity of the Sycophancy dataset.
-- Support multiple LLM providers.
-- Enhance explainability for governance decisions.
-- Deploy the platform using Hugging Face Spaces or cloud services.
-- Expand AI ethics guidelines for broader real-world applications.
-- Improve multilingual governance support.
+- 동조 데이터셋 다양성 확대
+- 다양한 LLM 제공자 지원
+- 거버넌스 판단 근거의 설명 가능성 강화
+- Hugging Face Spaces 및 클라우드 환경 배포
+- AI 윤리 기준표 고도화
+- 다국어 지원 확대
 
 ---
 
@@ -248,8 +252,8 @@ The platform provides separate desktop and mobile interfaces to support both adm
 
 ## 👥 Team
 
-| Name | Role | Responsibilities |
-|------|------|------------------|
+| 이름 | 역할 | 담당 업무 |
+|------|------|-----------|
 | **오수민** | Project Manager | 프로젝트 기획 및 총괄, 시스템 설계, 데이터 전처리, 모델 성능 평가 |
 | **이일규** | AI Model Engineer | AI 모델 개발 및 학습 |
 | **조희선** | Front-end · Back-end · UI/UX Engineer | Gradio 기반 웹 인터페이스 개발, 시스템 통합, UI/UX 설계, API 연동 |
