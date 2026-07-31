@@ -248,6 +248,14 @@ python app.py
 
 The platform provides separate desktop and mobile interfaces to support both administrators and end users.
 
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
 ## 👥 Team
 
 | 이름 | 역할 | 담당 업무 |
